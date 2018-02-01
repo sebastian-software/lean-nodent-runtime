@@ -1,2 +1,6 @@
 extends:
   - readable/node
+
+rules:
+  no-extend-native: off
+  consistent-this: off
