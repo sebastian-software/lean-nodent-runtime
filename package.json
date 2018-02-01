@@ -1,6 +1,6 @@
 {
   "name": "lean-nodent-runtime",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Lean Runtime component of nodent - assuming that Promises are there by default (or polyfilled).",
   "main": "index.js",
   "scripts": {
