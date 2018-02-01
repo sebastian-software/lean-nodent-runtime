@@ -10,7 +10,7 @@
     "release": "git push && release-it --github.release --npm.publish --non-interactive",
     "release:minor": "git push && release-it --github.release --npm.publish --non-interactive --increment minor",
     "release:major": "git push && release-it --github.release --npm.publish --non-interactive --increment major",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "keywords": [
     "nodent",
@@ -23,9 +23,15 @@
     "url": "http://sebastian-software.de/werner"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sebastian-software/lean-nodent-runtime.git"
+  },
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "eslint-config-readable": "^1.10.2",
+    "fast-async": "^6.3.0",
     "release-it": "^6.1.1"
   }
 }

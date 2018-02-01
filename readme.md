@@ -29,7 +29,7 @@ To enable this very lightweight runtime use the secondary parameter for plugin c
 ```js
 plugins: [
   [ "fast-async", {
-    useRuntimeModule: "lean-nodent-runtime"
+    "useRuntimeModule": "lean-nodent-runtime"
   }]
 ]
 ```
