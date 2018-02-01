@@ -12,9 +12,6 @@
     "release:major": "git push && release-it --github.release --npm.publish --non-interactive --increment major",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "lib/"
-  ],
   "keywords": [
     "nodent",
     "async",
