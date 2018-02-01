@@ -1,0 +1,33 @@
+{
+  "name": "lean-nodent-runtime",
+  "version": "0.0.1",
+  "description": "Lean Runtime component of nodent - assuming that Promises are there by default (or polyfilled).",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "scripts": {
+    "lint:js": "eslint --ignore-path .gitignore .",
+    "fix:js": "eslint --ignore-path .gitignore --fix .",
+    "format:js": "prettier --ignore-path .gitignore --write '**/*.{js,mjs}' && npm run fix:js",
+    "release": "git push && release-it --github.release --npm.publish --non-interactive",
+    "release:minor": "git push && release-it --github.release --npm.publish --non-interactive --increment minor",
+    "release:major": "git push && release-it --github.release --npm.publish --non-interactive --increment major",
+    "prepare": "preppy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib/"
+  ],
+  "keywords": ["nodent", "async", "promise"],
+  "author": {
+    "name": "Sebastian Werner",
+    "email": "s.werner@sebastian-software.de",
+    "url": "http://sebastian-software.de/werner"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-config-readable": "^1.10.2",
+    "preppy": "^3.3.1",
+    "release-it": "^6.1.1"
+  }
+}
