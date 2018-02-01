@@ -45,5 +45,5 @@ Please also make sure to pass over the information to require `lean-nodent-runti
 
 <img src="https://github.com/sebastian-software/sebastian-software-brand/blob/master/sebastiansoftware-en.svg" alt="Sebastian Software GmbH Logo" width="250" height="200"/>
 
-Copyright 2016-2018<br/>[Matt](https://github.com/MatAtBread)
+Copyright 2016-2018<br/>[Matt](https://github.com/MatAtBread)<br/><br/>
 Copyright 2017-2018<br/>[Sebastian Software GmbH](http://www.sebastian-software.de)
