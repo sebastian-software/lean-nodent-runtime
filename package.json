@@ -17,6 +17,9 @@
     "async",
     "promise"
   ],
+  "lib": [
+    "index.js"
+  ],
   "author": {
     "name": "Sebastian Werner",
     "email": "s.werner@sebastian-software.de",
