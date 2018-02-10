@@ -19,6 +19,27 @@ function $asyncbind(self, catcher) {
   }
 }
 
+$asyncbind.trampoline = function trampoline(t, x, s, e, u) {
+  return function b(q) {
+    while (q) {
+      if (q.then) {
+        q = q.then(b, e);
+        return u ? undefined : q;
+      }
+      try {
+        if (q.pop) {
+          if (q.length)
+            return q.pop() ? x.call(t) : q;
+          q = s;
+        } else
+          q = q.call(t)
+      } catch (r) {
+        return e(r);
+      }
+    }
+  }
+};
+
 if (!Function.prototype.$asyncbind) {
   Object.defineProperty(Function.prototype, "$asyncbind", {
     value: $asyncbind,
