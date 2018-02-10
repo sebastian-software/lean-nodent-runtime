@@ -33,6 +33,6 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "fast-async": "^6.3.0",
-    "release-it": "^6.1.1"
+    "release-it": "^7.0.0"
   }
 }
